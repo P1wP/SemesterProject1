@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+<link rel=stylesheet href="../styles.css" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Domine%7CRoboto" rel="stylesheet">
+	<title> CSM - Contact - </title>
+</head>
+
+<body>
+    <header>
+         <nav>
+             <a href="index.html"><div id=logo_nav> </div></a>
+            
+            <!-- Navigation menu mobile -->
+            <select id="mobile_nav" onchange="window.location.href=this.value">
+                <option value="visit.html">--SELECT--</option>
+                <option value="../index.html">Home</option>
+                <option value="explore.html">Exhibitions</option>
+                <option value="events.html">Events</option>
+                <!--<option value="tickets.html">Tickets/Booking</option>-->
+                <option value="visit.html">Visit</option>
+                <option value="involved.html" >Get Involved</option>
+                <option value="contact.html" class=active>Contact</option>
+                  
+            </select>
+            
+            <!-- Navigation menu desktop -->
+            <div id="desktop_nav">
+                <ul>
+                    <li><a href="../index.html">home</a></li>
+                    <li><a href="explore.html">exhibitions</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="visit.html">Visit</a></li>
+                    <li><a href="involved.html">Get involved</a></li>
+                    <li><a class="active" href="contact.html">Contact</a></li>
+                    
+                    
+                    <!--<a href="pages/tickets.html"><li>Booking</li></a>-->
+                    
+                    
+                    
+                    
+                </ul>
+            </div>
+            
+        </nav>
+    </header>
+    <main>
+    <div id="formSelector">
+        <ul>
+            <li id="formIntern">Internship</li>
+            <li id="formVolunteer">Volunteer</li>
+            <li id="formDonation">Donation</li>
+            <li id="formTour">Tour</li>
+            <li id="formNight">Night@Museum</li>
+            <li id="formLecture">Lecture</li>
+        </ul>
+    
+    </div>
+    
+    <div id="form_container">
+   <!-- FORM FOR INTERNSHIP -->
+        <div class="contact_intern">
+            <form action="mailto: jokke90@gmail.com" method="post">
+                <h3>Internship</h3>
+                
+                    <lable description="name">Name</lable>
+                    <input type="text" name="name" maxlength="40" placeholder=" Maximus" required>
+                
+                    <br>
+                    <lable description="age">Age</lable>
+                    <input type="number" name="age" maxlength="2" placeholder=" 45">
+                
+                    <br>
+                    <lable description="phone number">Phone-Number</lable>
+                    <input type="number" name="phone" placeholder=" (555)555-555" required>
+               
+                    <br>
+                    <lable description="email">Email-Address</lable>
+                    <input type="email" name="email" placeholder=" mail@address.com" required>
+                
+                    <br>
+                    <lable description="cover-letter">Cover-Letter&#40;PDF&#41;</lable>
+                    <input type="file" name="cover letter" accept="application/pdf" required>
+                
+                    <br>
+                    <lable description="Past experince">Past Experince&#40;PDF&#41;</lable>
+                    <input type="file" name="experience" accept="application/pdf">
+                
+
+                    <br>
+                    <button type="submit">Submit</button>
+                
+
+            </form>
+        </div>
+
+        <!-- FORM FOR VOLUNTEER -->
+        <div class="contact_volunteer">
+            <form action="mailto: jokke90@gmail.com" method="post">
+                <h3>Volunteer</h3>
+                
+                    <lable description="name">Name</lable>
+                    <input type="text" name="name" maxlength="40" placeholder=" Maximus">
+                
+                    <br>
+                    <lable description="age">Age</lable>
+                    <input type="number" name="age" maxlength="2" placeholder=" 45">
+                
+                    <br>
+                    <lable description="phone number">Phone-Number</lable>
+                    <input type="number" name="phone" placeholder=" (555)555-555" required>
+                
+                    <br>
+                    <lable description="email">Email-Address</lable>
+                    <input type="email" name="email" placeholder=" mail@address.com" required>
+                
+                    <br>
+                    <lable description="Comment">Comment</lable>
+                    <textarea type="text" rows="5" name="comment"></textarea>
+                
+
+
+                    <br>
+                    <button type="submit">Submit</button>
+                
+
+            </form>
+        </div>  
+
+            <!-- FORM FOR DONATION -->
+        <div class="contact_donation">
+            <form acion="mailto:jokke90@gmail.com" method="post">
+                <h3>Donation</h3>
+                
+                    <lable discription="name">Name</lable>
+                    <input type="text" name="name" maxlength="40" placeholder=" Maximus">
+                
+                
+                    <lable description="PhoneNumber">Phone-Number</lable>
+                    <input type="number" name="phone" placeholder=" (555)555-555" required>
+                
+                   
+                    <lable description="EmailAddress">Email-Address</lable>
+                    <input type="email" name="email" placeholder=" mail@address.com" required>
+                
+                     
+                    <lable description="Authenticated">Authenticated</lable>
+                    <input type="radio" name="authenticated" value="YES" >Yes
+                    <input type="radio" name="authenticated" value="NO" >No
+                
+                    <br>
+                    <lable description="ItemDescription">Item Description</lable>
+                    <textarea type="text" name="description" rows="5" maxlength="150" required></textarea>
+                
+
+                
+                    <lable description="Image">Image&#40;JPEG&#41;</lable>
+                    <input type="file" name="image" accept="image/jpeg" required>
+                
+                    
+                    <lable description="Comment">Comment</lable>
+                    <textarea type="text" name="comment" rows="5" maxlength="150"></textarea>
+                
+                
+                    <button type="submit">Submit</button>
+                
+            </form>
+        </div>   
+        <!-- FORM FOR TOUR -->
+        <div class="contact_tour">
+            <form acion="mailto:jokke90@gmail.com" method="post">
+                <h3>Tour</h3>
+                
+                    <lable discription="name">Name</lable>
+                    <input type="text" name="name" maxlength="40" placeholder=" Maximus" required>
+                
+                    <br>
+                    <lable description="PhoneNumber">Phone-Number</lable>
+                    <input type="number" name="phone" placeholder=" (555)555-555" required>
+                
+                    <br>
+                    <lable description="EmailAddress">Email-Address</lable>
+                    <input type="email" name="email" placeholder=" mail@address.com" required>
+                
+                    <br>
+                    <lable description="Number of people">Number of People</lable>
+                    <input type="number" name="people" maxlength="2" placeholder=" 9" required>
+                
+                    <br>
+                    <lable description="type">Type</lable>
+                    <input type="radio" name="type" value="YES" >Private
+                    <input type="radio" name="type" value="NO" >Class Tour
+        
+                <div>
+                        <br>
+                        <lable discription="snack option">Snacks</lable>
+                        <input id="alarShow" type="radio" name="tab" value="igotnone"/>Yes
+                        <input id="alarHide" type="radio" name="tab" value="igotsome" checked />No
+                    
+                    <div id="snack_option" class="snack_hide">
+                            <br>
+                            <label discription="snack_options">Allergies</label>
+                            <input type="checkbox" value="NUTS" name="nuts">Nuts
+                            <input type="checkbox" value="EGG" name="eggs">Eggs
+                            <input type="checkbox" value="Gluten" name="gluten">Gluten
+                            <input type="checkbox" value="LACTOSE" name="Lactose">Lactose
+                        
+                            <br>
+                            <lable description="Comment_alergies">Comment Allergies</lable>
+                            <textarea type="text" name="comment_allergies" rows="5" maxlength="150"></textarea>
+                        
+                    </div>
+                    
+                </div>
+                <!-- --------------------------END CODEPEN ----------------------- -->
+                   <br>
+                    <lable description="preferred date">preferred date</lable>
+                    <input type="date" name="date" required>
+                
+                    <br>
+                    <lable description="Comment">Comment</lable>
+                    <textarea type="text" name="comment" rows="5" maxlength="150"></textarea>
+                
+                    <br>
+                    <em>We will get back to you in 48 hours or less. With a confirmation on your preferred date or alternative dates close to your wish.</em>
+                
+                    <br>
+                    <button type="submit">Submit</button>
+                
+            </form>
+        </div>
+
+        <!-- FORM FOR NIGHT AT THE MUSEUM -->
+        <div class="contact_night">
+            <form action="mailto: jokke90@gmail.com" method="post">
+                <h3>Night At The Museum</h3>
+                
+                    <lable description="name">Name</lable>
+                    <input type="text" name="name" maxlength="40" placeholder=" Maximus">
+                
+                    <br>
+                    <lable description="phone number">Phone-Number</lable>
+                    <input type="number" name="phone" placeholder=" (555)555-555" required>
+                
+                    <br>
+                    <lable description="email">Email-Address</lable>
+                    <input type="email" name="email" placeholder=" mail@address.com" required>
+                    <br>
+                    <lable description="Number of people">Number of People</lable>
+                    <input type="number" name="people" maxlength="2" placeholder=" 9" required>
+                    <br>
+                    <lable description="preferred date">preferred date</lable>
+                    <input type="date" name="date" required>
+                    <br>
+                    <lable description="Comment">Comment</lable>
+                    <textarea type="text" rows="5" name="comment"></textarea>
+                
+
+                <p>
+                    <em>We will get back to you in 48 hours or less. With a confirmation on your preferred date or alternative dates close to your wish.</em>
+                </p>
+
+                    
+                    <button type="submit">Submit</button>
+                
+
+            </form>
+        </div>
+
+        <!-- FORM FOR LECTURE -->
+    
+        <div class="contact_lecture">
+            <form action="mailto: jokke90@gmail.com" method="post">
+                <h3>Lectures</h3>
+                
+                    <lable description="name">Name</lable>
+                    <input type="text" name="name" maxlength="40" placeholder=" Maximus">
+                    <br>
+                    <lable description="phone number">Phone-Number</lable>
+                    <input type="number" name="phone" placeholder=" (555)555-555" required>
+                    <br>
+                    <lable description="email">Email-Address</lable>
+                    <input type="email" name="email" placeholder=" mail@address.com" required>
+                    <br>
+                    <lable description="Number of people">Number of People</lable>
+                    <input type="number" name="people" maxlength="2" placeholder=" 9" required>
+                    <br>
+                    <lable description="preferred date">preferred date</lable>
+                    <input type="date" name="date" required>
+                    <br>
+                    <lable description="Comment">Comment</lable>
+                    <textarea type="text" rows="5" name="comment"></textarea>
+                
+
+                <p>
+                    <em>We will get back to you in 48 hours or less. With a confirmation on your preferred date or alternative dates close to your wish.</em>
+                </p>
+
+                
+                    <button type="submit">Submit</button>
+            
+
+            </form>
+        </div>
+    </div>
+    </main>
+    <footer>
+        <div id="footer_col">
+            <div id="f_col_1">
+                <ul>
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="explore.html">Exhibition</a></li>
+                    <li><a href="events.html">EVENTS</a></li>
+                </ul>
+            </div>
+
+            <div id="f_col_2">
+                <ul>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <!--<a href="tickets.html"><li>TICKETS/BOOKING</li></a>-->
+                    <li><a href="visit.html">VISIT</a></li>
+                </ul>
+            </div>
+
+            <div id="f_col_3">
+                <p>Social Media</p>
+                <a target="_blank" href="http://www.facebook.com"><img src="../img/logo/FB.png" alt="Facebook Icon"></a>
+                <a target="_blank" href="http://www.instagram.com"><img src="../img/logo/insta.png" alt ="Instagram Icon"></a>
+                <a target="_blank" href="http://www.twitter.com"><img src="../img/logo/twitter.png" alt="Twitter Icon"></a>
+                <a target="_blank" href="http://www.snapchat.com"><img src="../img/logo/snap.png" alt="Snapchat Icon"></a>
+            </div>
+            
+            
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="../script/script.js"></script>
+</body>
+        
+</html>

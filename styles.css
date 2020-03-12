@@ -1,0 +1,766 @@
+/* GLOBAL STYLES */
+
+/* index.html*/
+html{
+    width: 100%;
+    min-height: 100%;
+    background-image: url(img/william-bout-264826.jpg);
+    background-attachment: scroll;
+    
+    
+}
+
+body{
+    height: 100%;
+    margin: 0 auto;
+    background-color: #FFF;
+    box-shadow: 0 0 30px 0 rgba(52, 63, 62, 0.7);
+    font-family: 'Domine', serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main{
+    flex: 1;
+    
+}
+
+
+/* navigation */
+
+nav{
+    font-family: 'Roboto', sans-serif;
+}
+
+#logo_nav{
+    margin: 0 .5em .5em .5em;
+    background-image: url(img/logo/logo_2.png);
+    background-repeat: no-repeat;
+    height: 60px;
+    display:inline-block 50%;
+
+    
+   
+    
+}
+
+nav select{
+    text-transform: uppercase;
+    display: block;
+    color: #fff;
+    background-color: black;
+    list-style: none;
+    
+    width: 100%;
+    height: 50px;
+    border-radius: 3%;
+    padding: 5px 5px 5px 5px;
+    border: 1px solid black;
+    
+}
+
+
+
+.active{
+    color:#E46525;
+}
+
+a:active{
+    color:#E46525;
+}
+
+ul li a:hover{
+    color:#E46525;
+}
+
+
+
+header{
+    min-height: 50px;
+    background-color: #94B0DA;
+}
+
+/* images */
+
+ .slide_show{
+        width: 640px;
+        max-height: 400px;
+        
+        margin: 0 auto;
+        
+}
+
+.img_show{
+    margin: 1em;
+    margin: 0 auto;
+    max-width: 840px;
+}
+
+.img_show img{
+    width: 100%;
+}
+
+
+
+
+/*------------- font and copy styles -----------*/
+
+h1{
+    font-size:2em;
+}
+
+h2{
+    font-size: 1.5em;
+}
+
+
+
+section{
+    margin: 1em;
+}
+
+
+
+
+#open_hours h2, .kids h2, .teachers h2, .research h2{
+    width: 100%;
+    color: #fff;
+    background-color: #343F3E;
+    display:block;
+    text-align: center;    
+}
+
+section a{
+    width: 100%;
+    color: #fff;
+    background-color: #343F3E;
+    display:block;
+    text-align: center;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.hour_col_2{
+    padding: 0;
+    margin:0;
+    width: 180px;
+}
+
+.hour_col_1{
+    margin:0;
+    padding:0;
+    width: 290px;
+}
+
+/* Contact Form styles */
+
+.snack_hide {
+  display: none;
+}
+
+
+
+.contact_intern, .contact_volunteer, .contact_donation, .contact_tour, .contact_night, .contact_lecture{
+    width: 50%;
+}
+
+
+input[type= text], input[type= number], input[type= email], input[type= date]{
+    width: 100%;
+    height: 30px;
+    border: 1px solid #515b5b;
+    box-shadow: 0 0 10px 0 rgba(52, 63, 62, 0.5);
+    border-radius: 5px;
+    margin-bottom: 1.5em;
+      
+}
+
+input[type=radio], input[type=file]{
+    margin-bottom: 2em;
+}
+
+textarea{
+    width: 100%;
+    border: 1px solid #515b5b;
+    box-shadow: 0 0 10px 0 rgba(52, 63, 62, 0.5);
+    border-radius: 5px;
+    
+}
+
+button[type=submit]{
+    width: 100%;
+    height: 30px;
+    border: 1px solid #515b5b;
+    box-shadow: 0 0 10px 0 rgba(52, 63, 62, 0.5);
+    background-color: #E46525;
+    color: #DDECF9;
+    border-radius: 5px;
+    margin-bottom: 2.5em;
+    margin-top: 2em;
+    
+    
+}
+
+/* footer styles */
+
+footer{
+    width: 100%;
+    background-color: #343F3E;
+    text-transform: uppercase;
+    
+}
+
+#f_col_1 ul, #f_col_2 ul{
+    list-style-type: none;
+    list-style: none;
+    display: block;
+    margin-left: 1em;
+    padding:0;
+    
+}
+
+
+#f_col_1 a, #f_col_2 a{
+    color: #fff;
+    text-decoration: none;
+}
+
+#f_col_3 a{
+    margin-left: 1em;
+   
+}
+
+
+#f_col_3 p{
+    color:#fff;
+    margin-left: 1em;
+}
+
+/* flex to footer */
+#footer_col{
+        display:flex;
+        flex-flow: row wrap;
+    }
+
+/*----explore.html -----*/
+
+
+
+/* MOBILE STYLES */
+@media only screen and (min-width : 300px) and (max-width : 775px){
+    
+    html{
+        background-image: none;
+    }
+    
+    body{
+        width: 100%;
+        font-size: 1em;
+    } 
+    
+    
+    .slide_show{
+        width: 100%;
+        max-height: 66.667%;
+            
+    }
+    
+    #desktop_nav{
+        display:none;
+    }
+    .contact_intern, .contact_volunteer, .contact_donation, .contact_tour, .contact_night, .contact_lecture{
+        width: 100%;
+        margin: 0;
+    }
+    
+    #form_container div form{
+        width: 90%;
+        margin-left: 5%;
+    }
+    
+    /* VISIT US/ OPEN HOURS */
+    .hour_col_1 table th, .hour_col_1_event table th, .hour_col_1_exhibition table th {
+        text-align: left;
+    }
+    
+    .hour_col_1 table td, .hour_col_1_event table td, ..hour_col_1_exhibition table td{
+        text-align: right;  
+    }
+    
+    .open_hour_col{
+        display: flex;
+        flex-direction: row;
+            
+    }
+    
+    .hour_col_1{
+        flex-direction: column;
+        text-align: left;
+        font-size: .7em;
+        
+    }
+    
+    .hour_col_2{
+        flex-direction: column;
+        margin-left: 2em;
+        font-size: .7em;
+    }
+    
+    .hour_col_1_visit{
+        text-align: left;
+        margin-left:1em;
+    }
+    
+    /* footer */
+
+    #f_col_1, #f_col_2{
+        flex: 2 50%;
+        font-size: .6em;
+    }
+    
+    #f_col_2{
+        align-self: center;
+            
+    }
+    #f_col_3{
+        flex: 2;
+        font-size: .6em;
+        color: #fff;
+        
+    }
+    
+    #f_col_3{
+        flex: 50%;
+    }
+    
+    #f_col_4{
+        margin-right: 1em;
+    }
+    
+    /*----explore.html -----*/
+    
+    
+    /* hide/show content*/
+    #hidden_kids, #hidden_teacher{
+        display: none;
+    }
+    
+    #hide_btn, #hide_btn_2{
+       background-color: #343F3E;
+        color:#fff;
+        display: block;
+        width: 80px;
+        text-align: center;
+        padding: 3px 0px 5px; 0px;
+        border-radius: 8px;
+    }
+
+    
+}
+
+
+/* MOBILE LANDSCAPE */
+
+@media only screen and (min-width : 776px) and (max-width : 850px){
+    
+    body{
+        width: 100%;
+    } 
+    
+    
+    .slide_show{
+        width: 100%;
+        height: 66.667%;
+            
+    }
+    
+    /* show/ hide */
+    #desktop_nav{
+        display:none;
+    }
+    
+    #hide_btn, #hide_btn_2{
+        display:none;
+    }
+    /* VISIT US/ OPEN HOURS */
+    
+    .open_hour_col{
+        display: flex;
+        flex-direction: row;
+            
+    }
+    
+    .hour_col_1{
+        flex-direction: column;
+        text-align: left;
+        
+    }
+    
+    .hour_col_2{
+        flex-direction: column;
+        margin-left: 1em;
+    }
+    
+    #form_container{
+        width: 100%;
+    }
+    /* footer*/
+    
+    #f_col_1, #f_col_2, #f_col_3{
+        flex: 1 33%;
+    }
+    
+    /*----explore.html -----*/
+     #open_hours_exhibition{
+        flex:1 100%;
+    }
+   
+    .open_hour_col_exhibition{
+        display: flex;
+        flex-flow: row wrap;
+       
+    }
+    .hour_col_1_exhibition, .hour_col_2_exhibition{
+        flex:1 0;
+        
+    }
+    
+    /* events */
+    #open_hours_event{
+        flex:1 100%;
+    }
+    
+    .open_hour_col_event{
+        display: flex;
+        flex-flow: row wrap;
+       
+    }
+    .hour_col_1_event, .hour_col_2_event{
+        flex:1 0;
+        
+    }
+    
+    /* VISIT */
+
+    
+    .visit_container{
+        display:flex;
+        flex-flow: row wrap;
+    }
+    
+    .visit_container h1{
+        width: 100%;
+    }
+    #visit_location, .hour_col_1_visit{
+        flex:auto;
+        text-align: left;
+    }
+    
+    /* INVOLVED */
+    
+    #involved_intern a{
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+  
+     /* contact */
+    .contact_intern, .contact_volunteer, .contact_donation, .contact_tour, .contact_night, .contact_lecture{
+        width: 100%;
+        margin: 0;
+    }
+    
+    #form_container div form{
+        width: 90%;
+        margin-left: 5%;
+    }
+    
+
+}
+
+
+
+/*---------- DESKTOP -----------*/
+@media only screen and (min-width : 851px){
+    
+    body{
+        width: 80%;
+        font-size: 1.3em;
+    }
+   
+    
+    /* hide show content */
+    
+    #mobile_nav{
+        display:none;
+    }
+    
+    #hide_btn, #hide_btn_2{
+        display:none;    
+    }
+    
+    #hidden_kids #hidden_teacher{
+        display:block;
+    }
+    
+    /* navigation for desktop */
+    #desktop_nav li{
+        display:inline-block;
+        text-transform: uppercase;
+        margin-left:0;
+        margin-right: .5em;
+        font-size: .9em;
+        background-color: #343F3E;
+        padding: .3em;
+        border-radius: 5px;
+        
+    }
+    
+    ul li a{
+        color:#fff;
+    }
+    
+    #desktop_nav a{
+        text-decoration: none;
+    }
+   
+    #logo_nav{
+        float:left;
+        height: 60px;
+        width: 199px;
+        margin-top: 20px;
+    }
+    
+    #desktop_nav{
+        float:right;
+    
+    }
+    
+    nav{
+        overflow: auto;
+        border-radius: 2px;
+    }
+    
+    article{
+        clear:both;
+    }
+    
+    /* section top index.html */
+    
+    #intro_cms{
+        max-width: 60%;
+        margin-left: 1em;
+        padding-right: 1em;
+        border-right: 1px solid #343F3E;
+    }
+    #open_hours, #open_hours_event, open_hours_exhibition{
+        margin-right: 1em;
+        
+    }
+    
+    .hour_col_1 table th, .hour_col_1_event table th, .hour_col_1_exhibition table th {
+        text-align: left;
+    }
+    
+    .hour_col_1 table td, .hour_col_1_event table td, ..hour_col_1_exhibition table td{
+        text-align: right;  
+    }
+    
+    .hour_col_1 table{
+        width: 300px;
+    }
+    
+    /*  Sections INDEX.html */
+    hr{
+        display:none;
+    }
+    
+    
+    /* -----flex----- */
+    .desktop_container_1{
+        display: flex;
+        flex-direction: row;
+    }
+      #f_col_1, #f_col_2, #f_col_3{
+        flex: 1;
+    }
+    
+    /* Index */
+    .colums{
+        display: flex;
+        flex-flow: row wrap;
+    }
+    
+    .teachers, .research{
+        width: 50%;
+    }
+    .teachers, .research{
+        flex: 1 40%;
+    }
+    
+    /*explore*/
+    .explore_container{
+        display:flex;
+        flex-flow: row wrap;
+    }
+    
+    .explore_conteiner h1{
+        width: 100%;
+    }
+    
+    #exhibition_space{
+        flex-direction: row;
+    }
+    
+    #exhibition_evolution, #exhibition_biology{
+        flex: 1 40%;
+    }
+    
+    #exhibition_robot, #exhibition_ecology{
+        flex:2 40%;
+    }
+    
+    #open_hours_exhibition{
+        flex:1 100%;
+    }
+   
+    .open_hour_col_exhibition{
+        display: flex;
+        flex-flow: row wrap;
+       
+    }
+    .hour_col_1_exhibition, .hour_col_2_exhibition{
+        flex:1 0;
+        
+    }
+    
+    
+    
+    /* events */
+    .event_container{
+        display:flex;
+        flex-flow: row wrap;
+    }
+    .event_container h1{
+        width: 100%;
+    }
+    
+    #events_lecture, #events_night, #events_loan{
+        flex: 1 20%;
+    }
+    
+    #open_hours_event{
+        flex:1 100%;
+    }
+    
+    .open_hour_col_event{
+        display: flex;
+        flex-flow: row wrap;
+       
+    }
+    .hour_col_1_event, .hour_col_2_event{
+        flex:1 0;
+        
+    }
+    
+    /* visit */
+    
+    .visit_container{
+        display:flex;
+        flex-flow: row wrap;
+    }
+    
+    .visit_container h1{
+        width: 100%;
+    }
+    #visit_location, .hour_col_1_visit{
+        flex:auto;
+        text-align: left;
+    }
+    #visit_access{
+        flex:1 100%;
+    }
+    
+    #visit_admission, #visit_food{
+        flex:2 1;
+    }
+    
+    
+    
+    /* Involved */
+    
+    .involved_container{
+        display:flex;
+        flex-flow: row wrap;
+    }
+    
+    #involved_volunteer, #involved_intern{
+        width: 50%;
+        flex: 1 40%;
+    }
+    
+    #involved_intern a{
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+    
+    
+    /* contact */
+    #form_container{
+        margin-top: 50px;
+    }
+    .contact_intern, .contact_volunteer, .contact_donation, .contact_tour, .contact_night, .contact_lecture{
+        width: 50%;
+        margin: 0 auto;
+    }
+    
+    #form_container div form{
+        width: 90%;
+        margin-left: 5%;
+    }
+    
+    #formSelector{
+        text-transform: uppercase;
+        font-size: .8em;
+        text-align: center;
+        margin: 2% auto;
+    }
+    
+    #formSelector ul {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        
+        
+    }
+    
+    #formSelector ul li{
+        display:inline-block;
+        background-color: #343F3E;
+        border-radius: 5px;
+        padding: .3em;
+        margin: 0 auto;
+        color: #fff;
+        
+    }
+    
+    
+    /* ---- PSUDO ---- */
+    #desktop_nav li:active{
+        color:#E46525;
+    }
+
+    a:hover, #formSelector ul li:hover{ 
+        color:#E46525;
+    }
+    #open_hours h2:hover{
+        color: #E46525;
+    }
+    
+    #desktop_nav li:hover{
+        color:#E46525;
+    }
+    
+    #form_container button:hover{
+        background-color: #343F3E;
+    }
+}

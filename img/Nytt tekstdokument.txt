@@ -1,0 +1,8 @@
+tent 		Kira Schwarz	https://www.pexels.com/photo/two-pairs-of-shoes-on-rug-1414059/
+
+animals		Thomas Quine	https://www.flickr.com/photos/91994044@N00/6890129613
+
+
+IMG slider code 	https://www.w3schools.com/w3css/w3css_slideshow.asp
+
+IMPLEMENT AND TRY THIS !!!   https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp

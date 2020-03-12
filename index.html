@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+<link rel=stylesheet href="styles.css" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Domine%7CRoboto" rel="stylesheet">
+	<title> CSM - Home - </title>
+</head>
+
+<body>
+    <header>
+        <nav>
+             <a href="index.html"><div id=logo_nav> </div></a>
+            
+            <!-- Navigation menu mobile -->
+            <select id="mobile_nav" onchange="window.location.href=this.value">
+                <option value="index.html">--SELECT--</option>
+                <option value="index.html" class=active>Home</option>
+                <option value="pages/explore.html">Exhibitions</option>
+                <option value="pages/events.html">Events</option>
+                <!--<option value="pages/tickets.html">Tickets/Booking</option>-->
+                <option value="pages/visit.html">Visit</option>
+                <option value="pages/involved.html">Get Involved</option>
+                <option value="pages/contact.html">Contact</option>
+                  
+            </select>
+            
+            <!-- Navigation menu desktop -->
+            <div id="desktop_nav">
+                <ul>
+                    <li><a class="active" href="index.html">home</a></li>
+                    <li><a href="pages/explore.html">exhibitions</a></li>
+                    <li><a href="pages/events.html">Events</a></li>
+                    <li><a href="pages/visit.html">Visit</a></li>
+                    <li><a href="pages/involved.html">Get involved</a></li>
+                    <li><a href="pages/contact.html">Contact</a></li>
+                    
+                    
+                    <!--<a href="pages/tickets.html"><li>Booking</li></a>-->
+                    
+                    
+                    
+                    
+                </ul>
+            </div>
+            
+        </nav>
+    </header>
+        <!-- main copy/ introduction to website/the museum -->
+   <main>
+    
+        <div class="desktop_container_1">
+            <section id=intro_cms>
+                <h1>Explore together</h1>
+                <p>Come join us at the Community Science Museum where we’re committed to making science accessible to all.
+                Over the course of human history, science has developed from our early understanding of fire, wind, water, and earth to exploring everything from galaxies far away to the very building blocks of life itself.
+                The aim of our museum is to create a space where everyone can experience the wonders of our discoveries and perhaps even ignite a lifelong passion to continue the exploration of the world around us.
+                We believe science should not be confined to the textbook, but brought to live through exhibits. This is why we have over 1000 different exhibits on the many varied subjects of science to explore. Many of these exhibits are designed for you to interact with and play around to see science come to life (apart from the dinosaur exhibits – they only come to life at night when everyone’s gone home).</p>
+            </section>
+
+            <section id="open_hours">
+                <a href="pages/visit.html"><h2>Visit us</h2></a>
+
+                <div class="open_hour_col">
+
+                    <div class="hour_col_1">
+                        <h3>Open </h3>
+                        <table>
+                           <tr> <th>Monday:</th> <td>Closed</td></tr> 
+                           <tr> <th>Tuesday:</th> <td> 10:00 – 16:00</td></tr> 
+                           <tr> <th>Wednesday:</th> <td> 10:00 – 16:00</td></tr>  
+                           <tr> <th>Thursday:</th> <td> 10:00 – 16:00</td></tr>  
+                           <tr> <th>Friday:</th> <td> 10:00 – 19:00</td></tr>  
+                           <tr> <th>Saturday:</th> <td> 09:00 – 16:00</td></tr>  
+                           <tr> <th>Sunday:</th> <td> 09:00 – 13:00</td></tr> 
+                        </table>
+                    </div>
+
+                    <div class="hour_col_2">
+                        <h3>
+                            ADRESS:
+                        </h3>
+                        <p>
+                            Yellowbrick Road<br>
+                            Imagination Land<br>
+                            90120 OZ
+                        </p>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+    
+    
+    
+    <!-- image caruselle all the things -->
+    
+    <div class="img_show">
+        <img id="img" src=""; alt = "Alt text image">
+    </div>
+   
+    <div class="colums">
+        <section class="kids">
+            <h2>For Kids</h2>
+            <p>
+                Are you a young person looking to learn more about science? Come on down to our museum, there’s plenty to see and do.
+                You can learn about Newtonian physics from our bumper swing, or why not travel back in time and meet our resident Woolly Mammoth
+            </p>
+            <button id="hide_btn">More</button>
+            <p id="hidden_kids">
+                Our exhibits are designed to be accessible for interested minds, so make sure you come ready to learn and explore.
+                We also have the Young Stars club which meets once a week on a Saturday between 10:00 and 13:00 where you’ll get to explore and experiment with our team of experts.
+                During the school holidays we run special holiday clubs where you can join other children your age to go on a journey of discovery. Each holiday we pick a new theme to explore. To find out more about the holiday club and how you can join, send us a
+                <a href="pages/contact.html">Message</a>
+            </p>
+        </section>
+        <hr>
+        <section class="teachers">
+            <h2>For Teachers</h2>
+            <p>
+                As a community-driven museum, we want to work with schools to create places of learning and exploring. Our team are on hand to give your students guided tours of the museum.
+            <button id="hide_btn_2">More</button>
+            <p id="hidden_teacher">
+                And teach them in our learning laboratory, and provide great video presentations that will excite and inspire them.
+                Please get in touch with us here to find out more about our facilities and to arrange a time to bring your students through for a visit.<br>
+                <a href="pages/contact.html">Class tour</a>
+            </p>
+            
+            
+        </section>
+        <hr>
+        <section class="research">
+            <h2>For Researchers</h2>
+            <p>
+                Are you looking to get involved with our team of researchers and academics? Our museum offers various ways for you to use our resources and contribute towards them. We have online records, laboratory space, and a working relationship with a number of universities around the country.
+                <a href="pages/involved.html">Get Involved</a>
+            </p>
+        </section>
+    </div>
+    </main>
+       <footer>
+        <div id="footer_col">
+            <div id="f_col_1">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="pages/explore.html">EXHIBITIONS</a></li>
+                    <li><a href="pages/events.html">EVENTS</a></li>
+                </ul>
+            </div>
+
+            <div id="f_col_2">
+                <ul>
+                    <li><a href="pages/contact.html">CONTACT</a></li>
+                    <!--<a href="pages/tickets.html"><li>TICKETS/BOOKING</li></a>-->
+                    <li><a href="pages/visit.html">VISIT</a></li>
+                </ul>
+            </div>
+
+            <div id="f_col_3">
+                <p>Social Media</p>
+                <a target="_blank" href="http://www.facebook.com"><img src="img/logo/FB.png" alt="Facebook Icon"></a>
+                <a target="_blank" href="http://www.instagram.com"><img src="img/logo/insta.png" alt ="Instagram Icon"></a>
+                <a target="_blank" href="http://www.twitter.com"><img src="img/logo/twitter.png" alt="Twitter Icon"></a>
+                <a target="_blank" href="http://www.snapchat.com"><img src="img/logo/snap.png" alt="Snapchat Icon"></a>
+            </div>
+            
+            
+        </div>
+    </footer>
+    <script type="text/javascript" src="script/imageShow.js"></script>
+    <script type="text/javascript" src="script/showHide.js"></script>
+</body>
+
+</html>
